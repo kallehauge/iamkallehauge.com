@@ -1,0 +1,11 @@
+{
+  "name": "Kallehauge",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "node-sass": "latest",
+    "node-bourbon": "latest",
+    "grunt-sass": "latest",
+    "grunt-contrib-watch": "latest"
+  }
+}

@@ -1,0 +1,26 @@
+name: Kallehauge
+type: theme
+base theme: classy
+description: 'I am Kallehauge theme'
+package: iamkallehauge
+version: 1.0.0
+core: 8.x
+
+libraries:
+  - kallehauge/global-styling
+
+stylesheets-remove:
+  - @classy/css/components/tabs.css
+  - @system/css/components/menu.theme.css
+  - core/assets/vendor/normalize-css/normalize.css
+
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  service_menu: 'Service menu'
+  highlighted: Highlighted
+  content: Content
+  sidebar: 'Sidebar first'
+  footer: 'Footer first'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'

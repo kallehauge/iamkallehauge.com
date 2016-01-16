@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * Functions to support theming in the Kallehauge theme.
+ */
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function kallehauge_page_attachments_alter(array &$attachments) {
+  // If this is a logged in user, stop.
+  if (\Drupal::currentUser()->isAuthenticated()) {
+//    var_dump($attachments['#attached']);
+    $attachments['#attached']['library'][] = 'kallehauge/admin-styling';
+  }
+
+  // Remove the base css for anonymous users.
+//  if (in_array('system/base', $attachments['#attached']['library'])) {
+//    $index = array_search('system/base', $attachments['#attached']['library']);
+//    unset($attachments['#attached']['library'][$index]);
+//  }
+}

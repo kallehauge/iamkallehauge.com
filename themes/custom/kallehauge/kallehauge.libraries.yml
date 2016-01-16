@@ -1,0 +1,16 @@
+global-styling:
+  version: 1.0
+  css:
+    base:
+      css/base/reset.css: {}
+      css/base/elements.css: {}
+    component:
+      css/components/buttons.css: {}
+    layout:
+      css/layout/layout.css: {}
+
+admin-styling:
+  version: 1.0
+  css:
+    base:
+      css/components/tabs.css: {}
