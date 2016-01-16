@@ -1,14 +1,14 @@
-uuid: 8cff5e3e-7d17-4799-be35-53465ca75a7b
+uuid: f0e80334-b3f8-467c-9800-a2229183056d
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
   theme:
-    - bartik
-id: bartik_search
-theme: bartik
-region: sidebar_first
+    - kallehauge
+id: kallehauge_search
+theme: kallehauge
+region: '-1'
 weight: -1
 provider: null
 plugin: search_form_block

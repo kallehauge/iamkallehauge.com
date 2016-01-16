@@ -1,13 +1,13 @@
-uuid: cf0e8985-785b-422d-af09-09dca6094adb
+uuid: 5d60ea85-96f8-4a30-b942-66369d730406
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_page_title
-theme: bartik
+    - kallehauge
+id: kallehauge_page_title
+theme: kallehauge
 region: content
-weight: -50
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

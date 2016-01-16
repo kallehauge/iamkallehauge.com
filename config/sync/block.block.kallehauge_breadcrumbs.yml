@@ -1,14 +1,14 @@
-uuid: 51a824cd-1429-4833-a203-3e4ea27958c4
+uuid: f396f79a-943c-4fa9-b900-000dcb72a1aa
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_breadcrumbs
-theme: bartik
-region: breadcrumb
+    - kallehauge
+id: kallehauge_breadcrumbs
+theme: kallehauge
+region: '-1'
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

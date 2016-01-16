@@ -1,13 +1,13 @@
-uuid: 395af501-edc3-4772-b700-fde69ae2d3ef
+uuid: 172d11cd-4707-4c4d-9b00-c9056cfcc581
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_actions
-theme: bartik
+    - kallehauge
+id: kallehauge_local_actions
+theme: kallehauge
 region: content
-weight: -20
+weight: -7
 provider: null
 plugin: local_actions_block
 settings:

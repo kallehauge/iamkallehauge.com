@@ -1,13 +1,13 @@
-uuid: d213625d-c42a-4895-b000-ce8c41596863
+uuid: d52059bc-6e66-4473-b900-ebe090dfe561
 langcode: en
 status: true
 dependencies:
   theme:
-    - bartik
-id: bartik_local_tasks
-theme: bartik
+    - kallehauge
+id: kallehauge_local_tasks
+theme: kallehauge
 region: content
-weight: -40
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,16 +1,16 @@
-uuid: 925c92d6-5c93-4762-a636-54fb17f3de02
+uuid: 85b4523e-3076-4547-9648-724915bd4666
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.footer
   module:
     - system
   theme:
-    - bartik
-id: bartik_footer
-theme: bartik
-region: footer_fifth
+    - kallehauge
+id: kallehauge_footer
+theme: kallehauge
+region: '-1'
 weight: 0
 provider: null
 plugin: 'system_menu_block:footer'

@@ -1,15 +1,15 @@
-uuid: eb9ff187-394e-4df7-ab01-1af3949e8b59
+uuid: 8edfc420-e840-48b3-a202-2d76b90882bc
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_powered
-theme: bartik
-region: footer_fifth
-weight: 10
+    - kallehauge
+id: kallehauge_powered
+theme: kallehauge
+region: '-1'
+weight: -7
 provider: null
 plugin: system_powered_by_block
 settings:

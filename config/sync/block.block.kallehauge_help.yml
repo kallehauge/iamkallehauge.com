@@ -1,15 +1,15 @@
-uuid: a9f1b705-64f9-4e75-a444-68804a7c8e99
+uuid: 4a222cec-3ec1-4e1c-a739-571f0ff55cc3
 langcode: en
 status: true
 dependencies:
   module:
     - help
   theme:
-    - bartik
-id: bartik_help
-theme: bartik
+    - kallehauge
+id: kallehauge_help
+theme: kallehauge
 region: content
-weight: -30
+weight: -7
 provider: null
 plugin: help_block
 settings:

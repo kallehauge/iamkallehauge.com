@@ -1,16 +1,16 @@
-uuid: ab685f84-9b65-46a6-882e-46d4c6498463
+uuid: 73ae997a-5929-40ed-8302-2c2473e2eac3
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
   module:
     - system
   theme:
-    - bartik
-id: bartik_main_menu
-theme: bartik
-region: primary_menu
+    - kallehauge
+id: kallehauge_main_menu
+theme: kallehauge
+region: '-1'
 weight: 0
 provider: null
 plugin: 'system_menu_block:main'

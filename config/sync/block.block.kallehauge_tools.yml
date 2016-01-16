@@ -1,16 +1,16 @@
-uuid: a7298756-72ca-487f-bd0a-1010fa71f1cc
+uuid: 58850a3c-d212-4ec5-8007-7a9dcdd6dddd
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.tools
   module:
     - system
   theme:
-    - bartik
-id: bartik_tools
-theme: bartik
-region: sidebar_first
+    - kallehauge
+id: kallehauge_tools
+theme: kallehauge
+region: '-1'
 weight: 0
 provider: null
 plugin: 'system_menu_block:tools'

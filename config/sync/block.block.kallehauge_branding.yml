@@ -1,13 +1,13 @@
-uuid: ccdff490-20e4-404a-8200-efa4372eebda
+uuid: 6ae62109-1119-4172-8a01-1c87bb779750
 langcode: en
 status: true
 dependencies:
   module:
     - system
   theme:
-    - bartik
-id: bartik_branding
-theme: bartik
+    - kallehauge
+id: kallehauge_branding
+theme: kallehauge
 region: header
 weight: 0
 provider: null
