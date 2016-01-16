@@ -1,0 +1,8 @@
+name: Gist Embed
+type: module
+description: Provides a link field formatter to embed a Gist.
+core: 8.x
+package: Link
+
+dependencies:
+  - link

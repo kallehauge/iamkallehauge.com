@@ -1,0 +1,21 @@
+<?php
+/**
+ * @file
+ * Module file for Gist Embed module.
+ */
+
+/**
+ * Implements hook_theme().
+ *
+ * Define a template to embed a Gist on a page.
+ */
+function gist_embed_theme($existing, $type, $theme, $path) {
+  return array(
+    'gist_embed' => array(
+      'template' => 'gist-embed',
+      'variables' => [
+        'url' => NULL,
+      ],
+    ),
+  );
+}
