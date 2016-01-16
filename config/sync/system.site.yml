@@ -1,0 +1,12 @@
+uuid: c0f63091-1d99-421a-bd00-0e7877bf1b85
+name: 'I am Kallehauge'
+mail: andrekallehauge@gmail.com
+slogan: 'Hello I am Kallehauge'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en

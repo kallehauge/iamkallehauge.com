@@ -1,0 +1,31 @@
+uuid: 24a26e7c-7096-4439-8d60-9683edfc1329
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video.field_video
+    - paragraphs.paragraphs_type.video
+  module:
+    - video
+id: paragraph.video.default
+targetEntityType: paragraph
+bundle: video
+mode: default
+content:
+  field_video:
+    weight: 0
+    settings:
+      allowed_providers:
+        dailymotion: dailymotion
+        facebook: facebook
+        instagram: instagram
+        vimeo: vimeo
+        vine: vine
+        youtube: youtube
+      file_directory: 'video-thumbnails/[date:custom:Y]-[date:custom:m]'
+      uri_scheme: public
+    third_party_settings: {  }
+    type: video_embed
+hidden:
+  created: true
+  uid: true

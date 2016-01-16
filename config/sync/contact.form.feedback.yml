@@ -1,0 +1,10 @@
+uuid: a795a37d-4d6c-45f3-9840-6495c4db8ab8
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: 'Website feedback'
+recipients:
+  - andrekallehauge@gmail.com
+reply: ''
+weight: 0

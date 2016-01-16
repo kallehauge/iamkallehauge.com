@@ -1,0 +1,24 @@
+uuid: 2de87717-e2a9-4d8d-bb00-ca098d020d22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.code.field_gist
+    - paragraphs.paragraphs_type.code
+  module:
+    - link
+id: paragraph.code.default
+targetEntityType: paragraph
+bundle: code
+mode: default
+content:
+  field_gist:
+    weight: 0
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+hidden:
+  created: true
+  uid: true

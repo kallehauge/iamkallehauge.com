@@ -1,0 +1,21 @@
+uuid: 20a0ce5e-d579-4b89-8906-6bd31dd823bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_textarea
+    - paragraphs.paragraphs_type.textarea
+  module:
+    - text
+id: paragraph.textarea.field_textarea
+field_name: field_textarea
+entity_type: paragraph
+bundle: textarea
+label: Textarea
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long
