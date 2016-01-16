@@ -1,0 +1,23 @@
+uuid: 5a2242b6-261e-4f09-9409-9c990ca534f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gist.field_gist
+    - paragraphs.paragraphs_type.gist
+  module:
+    - gist_embed
+id: paragraph.gist.default
+targetEntityType: paragraph
+bundle: gist
+mode: default
+content:
+  field_gist:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: gist_embed
+hidden:
+  created: true
+  uid: true

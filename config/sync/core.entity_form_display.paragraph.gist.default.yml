@@ -1,0 +1,24 @@
+uuid: 7d606b6d-ce60-4cd9-8107-7b1fa282d18e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gist.field_gist
+    - paragraphs.paragraphs_type.gist
+  module:
+    - link
+id: paragraph.gist.default
+targetEntityType: paragraph
+bundle: gist
+mode: default
+content:
+  field_gist:
+    weight: 0
+    settings:
+      placeholder_url: 'https://gist.github.com/username/12345678'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+hidden:
+  created: true
+  uid: true

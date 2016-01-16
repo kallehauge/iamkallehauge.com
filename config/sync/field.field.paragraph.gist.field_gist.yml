@@ -1,20 +1,20 @@
-uuid: 20ff4d62-801b-4f13-9a03-3a7fa2b6faa5
+uuid: c29933a6-d5dd-4afb-b500-a9cfcf49f9b0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_gist
-    - paragraphs.paragraphs_type.code
+    - paragraphs.paragraphs_type.gist
   module:
     - link
-id: paragraph.code.field_gist
+id: paragraph.gist.field_gist
 field_name: field_gist
 entity_type: paragraph
-bundle: code
+bundle: gist
 label: Gist
 description: ''
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
