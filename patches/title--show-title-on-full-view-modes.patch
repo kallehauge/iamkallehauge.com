@@ -1,0 +1,13 @@
+diff --git a/title.module b/title.module
+index da7e2a6..c3b6fa4 100644
+--- a/title.module
++++ b/title.module
+@@ -101,7 +101,7 @@ function title_preprocess_node(&$variables) {
+     if ($variables['view_mode'] == 'full' && isset($variables['content']['title'])) {
+       // @todo, find a way to deal with titles on full page views now that
+       // the title is in a block.
+-      // $variables['content']['title']['#printed'] = FALSE;
++       $variables['content']['title']['#printed'] = FALSE;
+     }
+   }
+ }
