@@ -1,4 +1,0 @@
-patches:
-  -
-    patch: '../../patches/title--show-title-on-full-view-modes.patch'
-    reason: 'Enable the title field on full view mode pages.'
