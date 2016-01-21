@@ -1,0 +1,12 @@
+name: Title
+type: module
+description: 'Convert titles into fields which can be display manipulated.'
+# core: 8.x
+package: Media
+# version: VERSION
+
+# Information added by Drupal.org packaging script on 2015-10-23
+version: '8.x-2.x-dev'
+core: '8.x'
+project: 'title'
+datestamp: 1445562203
