@@ -6,17 +6,13 @@
 
 /**
  * Implements hook_page_attachments_alter().
+ *
+ * Add "admin library" if the user is logged in. We do this to avoid loading
+ * styling and JavaScript when it isn't needed.
  */
 function kallehauge_page_attachments_alter(array &$attachments) {
-  // If this is a logged in user, stop.
+  // If the user is logged in.
   if (\Drupal::currentUser()->isAuthenticated()) {
-//    var_dump($attachments['#attached']);
     $attachments['#attached']['library'][] = 'kallehauge/admin-styling';
   }
-
-  // Remove the base css for anonymous users.
-//  if (in_array('system/base', $attachments['#attached']['library'])) {
-//    $index = array_search('system/base', $attachments['#attached']['library']);
-//    unset($attachments['#attached']['library'][$index]);
-//  }
 }
