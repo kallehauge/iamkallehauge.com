@@ -31,6 +31,12 @@ views:
     - core/jquery
     - core/drupal
 
+paragraphs:
+  version: 1.0
+  css:
+    component:
+      css/components/field-video.css: {}
+
 admin-styling:
   version: 1.0
   css:

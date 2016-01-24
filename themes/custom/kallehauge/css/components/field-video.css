@@ -1,0 +1,5 @@
+.field-video { padding-bottom: 56.25%; position: relative; overflow: hidden; height: 0; margin-bottom: 1rem; }
+
+.field-video iframe, .field-video object, .field-video embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/*# sourceMappingURL=field-video.css.map */
