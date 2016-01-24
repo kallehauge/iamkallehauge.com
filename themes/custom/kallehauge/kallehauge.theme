@@ -4,8 +4,6 @@
  * Functions to support theming in the Kallehauge theme.
  */
 
-use \Drupal\node\NodeInterface;
-
 /**
  * Implements hook_page_attachments_alter().
  *
