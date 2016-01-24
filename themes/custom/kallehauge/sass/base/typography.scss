@@ -12,7 +12,7 @@ html {
     font-size: 14px;
   }
   @include max-width(map-get($breakpoints, small)) {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
