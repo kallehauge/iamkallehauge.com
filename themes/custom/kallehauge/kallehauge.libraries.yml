@@ -4,10 +4,32 @@ global-styling:
     base:
       css/base/reset.css: {}
       css/base/elements.css: {}
+      css/base/typography.css: {}
     component:
-      css/components/buttons.css: {}
+      css/components/button.css: {}
+      css/components/site-branding.css: {}
+      css/components/site-header.css: {}
     layout:
       css/layout/layout.css: {}
+
+node:
+  version: 1.0
+  css:
+    component:
+      css/components/article-full.css: {}
+
+views:
+  version: 1.0
+  css:
+    component:
+      css/components/article-teaser.css: {}
+  js:
+    js/imagesloaded/imagesloaded.pkgd.min.js: {}
+    js/masonry/masonry.pkgd.min.js: {}
+    js/view-frontpage.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
 
 admin-styling:
   version: 1.0

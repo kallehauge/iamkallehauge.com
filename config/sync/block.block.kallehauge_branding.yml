@@ -9,7 +9,7 @@ dependencies:
 id: kallehauge_branding
 theme: kallehauge
 region: header
-weight: 0
+weight: -7
 provider: null
 plugin: system_branding_block
 settings:
@@ -17,7 +17,7 @@ settings:
   label: 'Site branding'
   provider: system
   label_display: '0'
-  use_site_logo: true
+  use_site_logo: false
   use_site_name: true
-  use_site_slogan: true
+  use_site_slogan: false
 visibility: {  }

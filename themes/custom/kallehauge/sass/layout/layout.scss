@@ -1,4 +1,14 @@
-/**
- * @file
- * Basic layout styling.
- */
+// === Basic layout styling. ===
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/placeholders";
+
+.layout-content {
+  max-width: $site-width;
+  margin: 0 auto;
+  padding: ($gutter-size * 2) $gutter-size;
+
+  @include max-width(map-get($breakpoints, large)) {
+    padding: $gutter-size;
+  }
+}

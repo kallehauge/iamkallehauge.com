@@ -1,0 +1,14 @@
+// === Site branding styling. ===
+@import "../utilities/variables";
+
+.site-branding__name {
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-family: $primary-font;
+  color: map-get($spot-color, normal);
+  font-weight: map-get($font-weight, bold);
+
+  &:hover {
+    color: map-get($neutral-color, lightest);
+  }
+}

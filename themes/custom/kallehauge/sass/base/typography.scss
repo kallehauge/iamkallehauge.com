@@ -1,0 +1,50 @@
+// === General typography styling. ===
+@import "../utilities/mixins";
+
+// This font-size of the HTML element is the baseline for how we use
+// typography and elements that should depend on screen-size.
+// This means that changing these values will have a HUGE impact on the
+// entire site and should be tested before implemented on production.
+html {
+  font-size: 16px;
+
+  @include max-width(map-get($breakpoints, medium)) {
+    font-size: 14px;
+  }
+  @include max-width(map-get($breakpoints, small)) {
+    font-size: 12px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-bottom: $gutter-size;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: map-get($font-weight, bold);
+}
+
+h1 { font-size: 2.50rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.50rem; }
+h4 { font-size: 1.50rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1.00rem; }
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: $gutter-size;
+}
+
+a {
+  @include transition(.1s ease);
+}

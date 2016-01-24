@@ -1,6 +1,5 @@
-/**
- * @file
- * Basic layout styling.
- */
+.layout-content { max-width: 1024px; margin: 0 auto; padding: 2rem 1rem; }
+
+@media (max-width: 1023px) { .layout-content { padding: 1rem; } }
 
 /*# sourceMappingURL=layout.css.map */

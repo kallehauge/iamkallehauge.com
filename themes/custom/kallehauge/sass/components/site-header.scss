@@ -1,0 +1,7 @@
+// === Site header styling. ===
+@import "../utilities/variables";
+
+.site-header {
+  background: map-get($primary-color, dark);
+  padding: 1.5rem $gutter-size;
+}

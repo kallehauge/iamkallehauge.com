@@ -1,0 +1,27 @@
+html { font-size: 16px; }
+
+@media (max-width: 779px) { html { font-size: 14px; } }
+
+@media (max-width: 539px) { html { font-size: 12px; } }
+
+h1, h2, h3, h4, h5, h6 { line-height: 1.2; margin-bottom: 1rem; }
+
+h1, h2, h3 { font-weight: 700; }
+
+h1 { font-size: 2.50rem; }
+
+h2 { font-size: 1.75rem; }
+
+h3 { font-size: 1.50rem; }
+
+h4 { font-size: 1.50rem; }
+
+h5 { font-size: 1.25rem; }
+
+h6 { font-size: 1.00rem; }
+
+p { font-size: 1rem; line-height: 1.6; margin-bottom: 1rem; }
+
+a { -webkit-transition: 0.1s ease; -moz-transition: 0.1s ease; transition: 0.1s ease; }
+
+/*# sourceMappingURL=typography.css.map */

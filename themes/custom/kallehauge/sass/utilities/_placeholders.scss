@@ -1,0 +1,7 @@
+// === "Kallehauge" theme placeholders. ===
+@import "variables";
+@import "mixins";
+
+%box-shadow {
+  box-shadow: rgba(map-get($neutral-color, normal), .5) 0 0 1px;
+}

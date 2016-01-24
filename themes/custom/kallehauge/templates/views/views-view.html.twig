@@ -31,14 +31,15 @@
  */
 #}
 {%
-set classes = [
-'view',
-'view-' ~ id|clean_class,
-'view-id-' ~ id,
-'view-display-id-' ~ display_id,
-dom_id ? 'js-view-dom-id-' ~ dom_id,
-]
+  set classes = [
+    'view',
+    'view-' ~ id|clean_class,
+    'view-id-' ~ id,
+    'view-display-id-' ~ display_id,
+    dom_id ? 'js-view-dom-id-' ~ dom_id,
+  ]
 %}
+{{ attach_library('kallehauge/views') }}
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if title %}
@@ -46,27 +47,27 @@ dom_id ? 'js-view-dom-id-' ~ dom_id,
   {% endif %}
   {{ title_suffix }}
   {% if header %}
-    <div class="view-header">
+    <div class="view-{{ id|clean_class }}__header">
       {{ header }}
     </div>
   {% endif %}
   {% if exposed %}
-    <div class="view-filters">
+    <div class="view-{{ id|clean_class }}__filters">
       {{ exposed }}
     </div>
   {% endif %}
   {% if attachment_before %}
-    <div class="attachment attachment-before">
+    <div class="view-{{ id|clean_class }}__attachment view-{{ id|clean_class }}__attachment--before">
       {{ attachment_before }}
     </div>
   {% endif %}
 
   {% if rows %}
-    <div class="view-content">
+    <div class="view-{{ id|clean_class }}__content">
       {{ rows }}
     </div>
   {% elseif empty %}
-    <div class="view-empty">
+    <div class="view-{{ id|clean_class }}__empty">
       {{ empty }}
     </div>
   {% endif %}
@@ -75,7 +76,7 @@ dom_id ? 'js-view-dom-id-' ~ dom_id,
     {{ pager }}
   {% endif %}
   {% if attachment_after %}
-    <div class="attachment attachment-after">
+    <div class="view-{{ id|clean_class }}__attachment view-{{ id|clean_class }}__attachment--after">
       {{ attachment_after }}
     </div>
   {% endif %}
@@ -83,7 +84,7 @@ dom_id ? 'js-view-dom-id-' ~ dom_id,
     {{ more }}
   {% endif %}
   {% if footer %}
-    <div class="view-footer">
+    <div class="view-{{ id|clean_class }}__footer">
       {{ footer }}
     </div>
   {% endif %}

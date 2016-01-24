@@ -1,0 +1,26 @@
+// === "Kallehauge" theme mixins. ===
+@import "bourbon";
+@import "variables";
+
+@mixin placeholder {
+  ::-webkit-input-placeholder { @content }
+  :-moz-placeholder { @content }
+  ::-moz-placeholder { @content }
+  :-ms-input-placeholder { @content }
+}
+
+@function strip-units($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+@mixin max-width($width) {
+  @media (max-width: (strip-units($width) - 1) + 'px') {
+    @content;
+  }
+}
+
+@mixin min-width($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}

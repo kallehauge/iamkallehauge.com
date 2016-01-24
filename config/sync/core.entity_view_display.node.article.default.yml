@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.article.field_tags
     - node.type.article
   module:
-    - comment
     - entity_reference_revisions
     - image
     - text
@@ -26,13 +25,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     label: hidden
-  comment:
-    label: hidden
-    type: comment_default
-    weight: 4
-    settings:
-      pager_id: 0
-    third_party_settings: {  }
   field_image:
     type: image
     weight: 1
@@ -56,8 +48,6 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-  links:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-hidden: {  }
+hidden:
+  comment: true
+  links: true

@@ -8,7 +8,7 @@ dependencies:
     - kallehauge
 id: kallehauge_help
 theme: kallehauge
-region: content
+region: help
 weight: -7
 provider: null
 plugin: help_block

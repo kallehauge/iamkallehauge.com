@@ -1,4 +1,19 @@
-/**
- * @file
- * Basic elements styling.
- */
+// === Basic elements styling. ===
+@import "../utilities/variables";
+
+* {
+  box-sizing: border-box;
+  font-family: $primary-font;
+  color: $headline-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: map-get($neutral-color, lighter);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -7,7 +7,7 @@ module.exports = function (grunt) {
     sass: {
       options: {
         sourceMap: true,
-        outputStyle: 'expanded'
+        outputStyle: 'compact'
       },
       dist: {
         files: [{
@@ -19,7 +19,7 @@ module.exports = function (grunt) {
           extDot: 'last'
         }],
         options: {
-          includePaths: require('node-bourbon').includePaths
+          includePaths: require('node-neat').includePaths
         }
       }
     },

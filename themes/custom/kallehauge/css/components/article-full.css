@@ -1,0 +1,19 @@
+.article-full { box-shadow: rgba(153, 153, 153, 0.5) 0 0 1px; }
+
+.article-full { background: #fff; padding: 2rem; }
+
+@media (max-width: 539px) { .article-full { padding: 1rem; } }
+
+.article-full__field-image { margin: -2rem -2rem 1rem; }
+
+@media (max-width: 539px) { .article-full__field-image { margin: -1rem -1rem 1rem; } }
+
+.article-full__field-image img { width: 100%; }
+
+.article-full__header, .article-full__content { max-width: 780px; margin: 0 auto; }
+
+.article-full__date { color: #999999; text-align: center; font-size: .8rem; font-weight: 700; margin: 1.5rem 0 .5rem; }
+
+.article-full__title { text-align: center; }
+
+/*# sourceMappingURL=article-full.css.map */

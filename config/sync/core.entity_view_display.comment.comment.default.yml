@@ -18,6 +18,5 @@ content:
     weight: 0
     settings: {  }
     third_party_settings: {  }
-  links:
-    weight: 100
-hidden: {  }
+hidden:
+  links: true

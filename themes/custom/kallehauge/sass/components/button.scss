@@ -1,0 +1,33 @@
+// === Button styling. ===
+@import "../utilities/variables";
+@import "../utilities/mixins";
+
+@mixin button($primary: map-get($primary-color, normal), $primary-text-color: map-get($neutral-color, lightest), $active: map-get($primary-color, light), $active-text-color: map-get($neutral-color, lightest)) {
+  text-decoration: none;
+  padding: .75em 1.5em;
+  font-weight: map-get($font-weight, bold);
+  display: inline-block;
+  background: $primary-text-color;
+  border: 1px solid rgba($primary, .8);
+  color: $primary;
+  @include appearance(none);
+  @include user-select(none);
+
+  &.is-active {
+    color: $active-text-color;
+    background: $active;
+    border-color: $active;
+  }
+
+  &:focus,
+  &:hover {
+    color: $primary-text-color;
+    background: $primary;
+    border-color: $primary;
+  }
+}
+
+.button,
+%button {
+  @include button();
+}

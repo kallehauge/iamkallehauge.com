@@ -1,0 +1,57 @@
+// === "Kallehauge" theme variables. ===
+
+// Layout.
+$site-width: 1024px;
+$breakpoints: (
+  small: 540px,
+  medium: 780px,
+  large: $site-width,
+);
+
+$gutter-size: 1rem;
+$gutter-breakpoint-sizes: (
+  large: $gutter-size,
+  medium: $gutter-size,
+  small: $gutter-size,
+);
+
+// Fonts.
+$primary-font: Arial;
+$secondary-font: George;
+
+$font-weight: (
+  light: 100,
+  normal: 400,
+  bold: 700,
+);
+
+// Main colors.
+$primary-color: (
+  light: #727d90,
+  normal: #037ca9,
+  dark: #23282d,
+);
+$secondary-color: (
+  light: #E45A59,
+  normal: #ce616e,
+  dark: #983c3b,
+);
+$neutral-color: (
+  lightest: #fff,
+  lighter: #ecf2f4,
+  light: #f9f9f9,
+  normal: #999999,
+  dark: #555,
+  darker: #313538,
+  darkest: #222,
+);
+$spot-color: (
+  light: #EAD666,
+  normal: #eabe5c,
+  dark: #BF9B4B,
+);
+
+// Functional colors.
+$headline-color: map-get($neutral-color, darker);
+$paragraph-color: map-get($neutral-color, dark);
+$text-negative-color: #fff;

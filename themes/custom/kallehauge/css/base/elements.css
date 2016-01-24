@@ -1,6 +1,7 @@
-/**
- * @file
- * Basic elements styling.
- */
+* { box-sizing: border-box; font-family: Arial; color: #313538; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body { background: #ecf2f4; }
+
+img { max-width: 100%; height: auto; }
 
 /*# sourceMappingURL=elements.css.map */

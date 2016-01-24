@@ -1,0 +1,50 @@
+// === Article styling. ===
+@import "../utilities/variables";
+@import "../utilities/mixins";
+@import "../utilities/placeholders";
+
+$article-padding: (
+  'medium': $gutter-size * 2,
+  'small': $gutter-size,
+);
+
+.article-full {
+  background: map-get($neutral-color, lightest);
+  @extend %box-shadow;
+  padding: map-get($article-padding, medium);
+  @include max-width(map-get($breakpoints, small)) {
+    padding: map-get($article-padding, small);
+  }
+
+  &__field-image {
+    // We use a gutter around the content, but we wish to have an image that
+    // goes all the way to the border.
+    // This will counter the parents padding with negative margin.
+    margin: (-(map-get($article-padding, medium))) (-(map-get($article-padding, medium))) $gutter-size;
+    @include max-width(map-get($breakpoints, small)) {
+      margin: (-(map-get($article-padding, small))) (-(map-get($article-padding, small))) $gutter-size;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__header,
+  &__content {
+    max-width: map-get($breakpoints, medium);
+    margin: 0 auto;
+  }
+
+  &__date {
+    color: map-get($neutral-color, normal);
+    text-align: center;
+    font-size: .8rem;
+    font-weight: map-get($font-weight, bold);
+    margin: 1.5rem 0 .5rem;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}
