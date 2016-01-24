@@ -47,4 +47,17 @@ p {
 
 a {
   @include transition(.1s ease);
+  color: map-get($primary-color, normal);
+
+  &:hover {
+    color: map-get($secondary-color, normal);
+  }
+}
+
+strong {
+  font-weight: map-get($font-weight, bold);
+}
+
+em {
+  font-style: italic;
 }

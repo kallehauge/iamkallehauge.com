@@ -1,5 +1,5 @@
 // === Basic elements styling. ===
-@import "../utilities/variables";
+@import "../utilities/mixins";
 
 * {
   box-sizing: border-box;
@@ -16,4 +16,9 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+pre {
+  @include word-wrap(break-word);
+  white-space: pre-wrap;
 }

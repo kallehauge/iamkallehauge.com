@@ -4,4 +4,6 @@ body { background: #ecf2f4; }
 
 img { max-width: 100%; height: auto; }
 
+pre { overflow-wrap: break-word; word-wrap: break-word; word-break: break-all; white-space: pre-wrap; }
+
 /*# sourceMappingURL=elements.css.map */
