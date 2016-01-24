@@ -47,4 +47,8 @@ $article-padding: (
   &__title {
     text-align: center;
   }
+
+  &__body {
+    font-weight: map-get($font-weight, bold);
+  }
 }
